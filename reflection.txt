@@ -1,0 +1,6 @@
+In the delimiter checker, each stack element represents an opening delimiter that has not been closed yet. 
+The most recently pushed delimiter has to be checked first because the most recently opened delimiter needs to be closed first. 
+For example if we had "([)]",  "[" would be popped  when ")" is found, which causes the program to detect a mismatch.
+In the postfix evaluator, each stack element represents a number waiting to be used in an operation. 
+The most recently pushed number is used first because it is the right operand. For example, in 10 4 -, 4 is popped first and 10 would be popped second, giving 10 - 4 = 6.
+Therefore, both algorithms need LIFO because the newest unfinished item is the one that needs to be handled first.
